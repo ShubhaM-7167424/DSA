@@ -11,11 +11,11 @@ function isLeapYear(year) {
         return false;
     }
 }
-
+ 
 console.log(isLeapYear(2027));
 console.log(isLeapYear(2024));
 console.log(isLeapYear(2400));
-console.log(isLeapYear(2100));
+console.log(isLeapYear(1800));
 
 console.log('function 2');
 
