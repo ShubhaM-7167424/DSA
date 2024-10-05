@@ -1,0 +1,18 @@
+example with n=36
+
+Factors of 36 :  1*36, 2*18, 3*12, 4*9, 6*6
+
+Notice how the factors pair off. The smaller factor in each pair is always
+less than or equal to √36 = 6.
+
+Once we check divisibility up to 6, we have implicitly checked all possible pairs.
+If no factor is found up to 6, no factors exist.
+
+****************************************************************************
+
+Example with n = 37 (a prime number):
+
+If n = 37, Math.sqrt(37) is approximately 6.08, so we only need to check divisibility up to 6.
+
+We check 2, 3, 4, 5, and 6. Since none of these divide 37, we can conclude that 37 is prime,
+without needing to check numbers greater than 6.
