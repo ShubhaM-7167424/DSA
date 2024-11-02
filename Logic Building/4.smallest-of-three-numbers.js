@@ -9,7 +9,7 @@ function smallestOfThreeNumbers(a, b, c) {
         return c;
     }
 }
-
+    
 console.log(smallestOfThreeNumbers(1, 2, 3));
 console.log(smallestOfThreeNumbers(23, 12, 3));
 console.log(smallestOfThreeNumbers(40, 12, 33));
