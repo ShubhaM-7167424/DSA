@@ -55,3 +55,25 @@ console.log(isBalancedParentheses2("{[()]}"));
 console.log(isBalancedParentheses2("{[(])}"));
 console.log(isBalancedParentheses2("{["));
 console.log(isBalancedParentheses2(")}"));
+
+
+function isBalancedParentheses3(str) {
+    let stack = [];
+    let open = ["(", "{", "["];
+    let close = [")", "}", "]"];
+
+    for (let i = 0; i < str.length; i++) {
+        if (open.includes(str[i])) {
+            stack.push(str[i]);
+        } else if (close.includes(str[i])) {
+            let last = stack.pop();
+            if (open.indexOf(last) !== close.indexOf(str[i])) {
+                return false;
+            }
+        }
+    }
+    return stack.length === 0;
+}
+
+console.log(isBalancedParentheses3("{[()]}"));
+console.log(isBalancedParentheses3("{[(])}"));
