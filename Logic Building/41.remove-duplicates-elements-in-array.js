@@ -26,3 +26,34 @@ function removeDuplicates(arr) {
 }
 
 console.log(removeDuplicates(arr));
+// *******************************************************************
+
+let array = [1, 6, 6, 6, 5];
+
+function removeDuplicates(array) {
+    let newArr = [];
+    for (let i = 0; i < array.length; i++) {
+        if (newArr.indexOf(array[i]) === -1) {
+            newArr.push(array[i]);
+        }
+    }
+    return newArr;
+}
+
+console.log(removeDuplicates(array));
+
+//? *************************************************************
+
+let arr2 = [1, 2, 7, 7, 7, 3];
+
+function removeDuplicates(arr2) {
+    let result = [];
+    for (let i = 0; i < arr2.length; i++) {
+        if (!result.includes(arr2[i])) {
+            result.push(arr2[i]);
+        }
+    }
+    return result;
+}
+
+console.log(removeDuplicates(arr2));
