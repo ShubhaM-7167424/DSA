@@ -14,27 +14,32 @@ function isStrongPassword(password) {
     let number = "0123456789";
     let specialCharacter = "!@#$%^&*";
 
-    let lowercaseCharacterExist = false;
-    let uppercaseCharacterExist = false;
-    let numberExist = false;
-    let specialCharacterExist = false;
+    let lowercaseCharacterExist = 0;
+    let uppercaseCharacterExist = 0;
+    let numberExist = 0;
+    let specialCharacterExist = 0;
 
     for (let char of password) {
         if (lowercaseCharacter.includes(char)) {
-            lowercaseCharacterExist = true;
+            lowercaseCharacterExist = 1;
         } else if (uppercaseCharacter.includes(char)) {
-            uppercaseCharacterExist = true;
+            uppercaseCharacterExist = 1;
         } else if (number.includes(char)) {
-            numberExist = true;
+            numberExist = 1;
         } else if (specialCharacter.includes(char)) {
-            specialCharacterExist = true;
+            specialCharacterExist = 1;
         }
     }
 
-    return lowercaseCharacterExist && uppercaseCharacterExist && numberExist && specialCharacterExist;
+    return (
+        (lowercaseCharacterExist &&
+            uppercaseCharacterExist &&
+            numberExist &&
+            specialCharacterExist) === 1
+    );
 }
 
 console.log(isStrongPassword("Shubh35@*"));
 console.log(isStrongPassword("Shubh3538"));
 console.log(isStrongPassword("shubh3@38"));
-console.log(isStrongPassword("SHUBH4@38"));
+console.log(isStrongPassword("SHUBH4@38p"));
