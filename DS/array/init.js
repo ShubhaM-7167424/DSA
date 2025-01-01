@@ -20,3 +20,13 @@ let students = [
     {name: 'Rohan', city: 'Chennai', country: 'India'}
 ]
 console.log(students);
+
+// using array constructor
+
+let arrayConstructor1 = new Array()
+arrayConstructor1[0] = 5
+arrayConstructor1[1] = 10
+console.log(arrayConstructor1);
+
+let arrayConstructor2 = new Array("Ram", "Shyam", "Mohan")
+console.log(arrayConstructor2);
