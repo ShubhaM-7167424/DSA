@@ -30,3 +30,6 @@ console.log(arrayConstructor1);
 
 let arrayConstructor2 = new Array("Ram", "Shyam", "Mohan")
 console.log(arrayConstructor2);
+
+let filledArray = new Array(7).fill(0)
+console.log(filledArray);
