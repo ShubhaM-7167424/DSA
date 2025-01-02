@@ -48,3 +48,19 @@ console.log(sparseArray);
 let ofArrayPlus = ['plus', 'minus', ...ofArray];
 console.log(ofArrayPlus);
 
+let dynamicArray = [12, 'Shubham', true, { name: 'Shubham', city: 'Delhi' }];
+console.log(dynamicArray);
+
+console.log(dynamicArray[1]);
+console.log(dynamicArray[3]);
+
+let fruits = ['apple', 'banana', 'orange', 'mango'];
+let fruit1 = fruits[0];
+let fruit2 = fruits[1];
+let fruit3 = fruits[2];
+let fruit4 = fruits[3];
+console.log(fruit1, fruit2, fruit3, fruit4);
+
+let [fruit11, fruit22, fruit33, fruit44] = fruits;
+console.log(fruit11, fruit22, fruit33, fruit44);
+
