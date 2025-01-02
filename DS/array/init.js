@@ -64,3 +64,30 @@ console.log(fruit1, fruit2, fruit3, fruit4);
 let [fruit11, fruit22, fruit33, fruit44] = fruits;
 console.log(fruit11, fruit22, fruit33, fruit44);
 
+console.log("length of fruits array: ", fruits.length);
+for(let i = 0; i < fruits.length; i++) {
+    console.log("for", fruits[i]);
+}
+
+for(let fruit of fruits) {
+    console.log("for of", fruit);
+}
+
+fruits.forEach(function(fruit) {
+    console.log("forEach", fruit);
+});
+
+fruits.push('grapes');
+console.log(fruits);
+
+let fruitsLastElement = fruits.pop();
+console.log("last element: ", fruitsLastElement);
+console.log("fruits after pop: ", fruits);
+
+let firstElement = fruits.shift();
+console.log("first element: ", firstElement);
+console.log("fruits after shift: ", fruits);
+
+fruits.unshift('papaya');
+console.log("fruits after unshift: ", fruits);
+
